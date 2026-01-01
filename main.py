@@ -23,7 +23,7 @@ def check():
         ask_ext = input("Enter the extension name you want to sort(example(.txt)): ")
         if not ask_ext.startswith("."):
             print("Please, start the extension name with fullstop. Example = .txt")
-            break
+            continue
             
         sort(ask_folder, ask_ext)
         rerun = input("Are you done sorting: (y/n) ").lower()
@@ -34,4 +34,5 @@ def check():
 
 
 check()
+
 
